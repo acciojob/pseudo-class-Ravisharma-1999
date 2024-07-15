@@ -1,28 +1,25 @@
 /*  your css code here. If applicable */
-#container {
-    margin: 20px;
-    position: relative; /* Ensure pseudo-elements are positioned relative to this container */
-    text-align: center; /* Center-align content */
-    font-size: 16px; /* Base font size */
+body {
+    font-family: Arial, sans-serif;
 }
 
-#container::before,
-#container::after {
-    content: "Special Text"; /* Content to insert before and after */
-    color: #f00; /* Red color for the text */
-    font-size: 20px; /* Font size of the text */
-    display: block; /* Ensure each pseudo-element is on a new line */
-    margin-bottom: 10px; /* Spacing between pseudo-elements and main content */
+#container {
+    margin: 20px;
+    position: relative;
 }
 
 #container::before {
-    position: absolute; /* Position before the content */
-    top: 0; /* Align at the top of the container */
-    left: 0; /* Align at the left of the container */
+    content: "Special Text Before";
+    color: #f00;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 #container::after {
-    position: absolute; /* Position after the content */
-    bottom: 0; /* Align at the bottom of the container */
-    right: 0; /* Align at the right of the container */
+    content: "Special Text After";
+    color: #f00;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
 }
